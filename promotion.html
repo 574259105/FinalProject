@@ -126,7 +126,7 @@ tr:nth-child(even) {
     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
     <a href="HOME.html" class="w3-bar-item w3-button w3-padding "><i class="fa fa-users fa-fw"></i>  Overview</a>
     <a href="promotion.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-gift fa-fw"></i>  Promotion</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-wrench fa-fw"></i>  Service</a>
+    <a href="service.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-wrench fa-fw"></i>  Service</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-address-book-o fa-fw"></i>  Contact</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-star fa-fw"></i>  Review</a>
 
@@ -201,14 +201,54 @@ tr:nth-child(even) {
         
       </tr>
     </tbody>
-         <p>
-          <div class="btn-group" role="group" align="center">
-          <button type="button" class="btn btn-sm" style="background-color: forestgreen"><span><i class="glyphicon glyphicon-plus"></i></span> </button>
-          <button type="button" class="btn btn-sm" style="background-color: antiquewhite"><i class="glyphicon glyphicon-edit"></i></span></button>
-          <button type="button" class="btn btn-sm" style="background-color: red"><i class="glyphicon glyphicon-minus"></i></span></button>
-        </div>  </p>
+         
 	  </table>
+	  
 	</div>
+	
+	<div class="w3-row-padding w3-margin-bottom col-lg-offset-0 col-lg-12">
+	<span class="heading">Promotion Detail</span>
+		<form method="post" enctype="multipart/form-data" class="form-horizontal">
+     
+ <table class="table table-bordered table-responsive">
+ 
+    <tr>
+     <td><label class="control-label">Promotion Name</label></td>
+        <td><input class="form-control" type="text" name="type" placeholder="Enter promotion" value="" /></td>
+    </tr>
+    
+    <tr>
+     <td><label class="control-label">Detail</label></td>
+        <td><input class="form-control" type="text" name="car" placeholder="Enter detail" value="" /></td>
+    </tr>
+    
+    <tr>
+     <td><label class="control-label">Photo</label></td>
+        <input class="input-group" type="file" name="image" accept="image/*" /></td>
+    </tr>
+    
+    <tr>
+        <td colspan="2" align="right" ><span style="text-align: right"></span><span style="text-align: center"></span>
+          <button type="submit" name="btnsave" class="btn btn-default">
+        <span class="glyphicon glyphicon-save"></span> &nbsp; save
+        </button>
+       
+        <button type="edit" name="btnedit" class="btn btn-default">
+        <span class="glyphicon glyphicon-edit"></span> &nbsp; edit
+        </button>
+        
+        <button type="del" name="btndel" class="btn btn-default">
+        <span class="glyphicon glyphicon-trash "></span> &nbsp; Del
+        </button>
+        </td>
+    </tr>
+    
+    </table>
+    
+</form>
+
+	</div>
+
 <script>
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
